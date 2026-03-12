@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOKAH Match Day</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{background:#050505;color:white;font-family:'Orbitron',sans-serif;text-align:center;padding-top:80px;}
+h1{color:#ff2e63;font-size:60px;}
+.scoreboard{background:#0f0f0f;padding:40px;width:350px;margin:auto;border-radius:12px;box-shadow:0 0 20px #ff2e63;}
+.team{font-size:28px;margin:15px;}
+.score{font-size:48px;margin:20px;}
+button{padding:10px 20px;font-size:20px;margin:10px;background:#ff2e63;border:none;color:white;border-radius:5px;cursor:pointer;}
+</style>
+</head>
+<body>
+
+<h1>LOKAH ☄️</h1>
+
+<div class="scoreboard">
+<div class="team">LOKAH</div>
+<div id="runs" class="score">0</div>
+
+<button onclick="addRun()">+1 Run</button>
+<button onclick="addFour()">+4</button>
+<button onclick="addSix()">+6</button>
+</div>
+
+<script>
+let score=0;
+function addRun(){score+=1;update()}
+function addFour(){score+=4;update()}
+function addSix(){score+=6;update()}
+function update(){document.getElementById("runs").innerText=score}
+</script>
+
+</body>
+</html>

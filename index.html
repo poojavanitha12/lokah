@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LOKAH ☄️</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:'Orbitron',sans-serif;background:#050505;color:white;}
+nav{position:fixed;top:0;width:100%;background:rgba(0,0,0,0.8);display:flex;justify-content:center;gap:40px;padding:15px;z-index:100;}
+nav a{color:white;text-decoration:none;font-size:14px;}
+.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;}
+.logo{width:320px;animation:float 4s ease-in-out infinite;}
+@keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-15px)}100%{transform:translateY(0)}}
+.hero h1{font-size:60px;color:#ff2e63;text-shadow:0 0 20px #ff2e63;}
+.tagline{color:#ff9fc0;font-size:24px;}
+.section{padding:120px 12%;}
+.section h2{color:#ff2e63;margin-bottom:30px;}
+.players{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+.player-card{position:relative;height:320px;overflow:hidden;border-radius:12px;border:1px solid #222;}
+.player-card img{width:100%;height:100%;object-fit:cover;filter:brightness(0.3);transition:0.5s;}
+.player-info{position:absolute;bottom:20px;left:20px;color:white;transition:0.5s;}
+.player-card:hover img{filter:brightness(1);transform:scale(1.1);}
+.player-card:hover .player-info{transform:translateY(-20px);}
+.match{background:#140025;padding:20px;margin:15px 0;border-left:4px solid #ff2e63;}
+button{padding:15px 25px;font-size:18px;background:#ff2e63;color:white;border:none;border-radius:5px;cursor:pointer;}
+footer{padding:80px;text-align:center;background:black;color:#aaa;}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#about">ABOUT</a>
+<a href="#team">TEAM</a>
+<a href="#matches">MATCHES</a>
+<a href="matchday.html">MATCH DAY</a>
+<a href="#contact">CONTACT</a>
+</nav>
+
+<section class="hero">
+<img src="lokah-logo.png" class="logo">
+<h1>LOKAH ☄️</h1>
+<div class="tagline">Debugging the Pitch</div>
+<a href="matchday.html"><button>ENTER MATCH DAY MODE</button></a>
+</section>
+
+<section id="about" class="section">
+<h2>About the Team</h2>
+<p>
+LOKAH is a squad of IT professionals balancing code and cricket.
+Competing in IAM ONE Cricfest 2026 with the motto:
+<b>Debugging the Pitch.</b>
+</p>
+</section>
+
+<section id="team" class="section">
+<h2>The Squad</h2>
+<div class="players">
+
+<div class="player-card">
+<img src="players/flash.jpg">
+<div class="player-info">
+<h3>FLASH ⚡</h3>
+Captain<br>Right arm medium bowling all-rounder
+</div>
+</div>
+
+<div class="player-card">
+<img src="players/preethi.jpg">
+<div class="player-info">
+<h3>PREETHI</h3>
+Vice Captain<br>Right handed batsman
+</div>
+</div>
+
+<div class="player-card">
+<img src="players/tags.jpg">
+<div class="player-info">
+<h3>TAGS</h3>
+Right arm slow bowling all-rounder
+</div>
+</div>
+
+<div class="player-card">
+<img src="players/karishma.jpg">
+<div class="player-info">
+<h3>KARISHMA</h3>
+Right arm fast medium bowler
+</div>
+</div>
+
+<div class="player-card">
+<img src="players/lara.jpg">
+<div class="player-info">
+<h3>LARA</h3>
+Batting all-rounder
+</div>
+</div>
+
+<div class="player-card">
+<img src="players/gayathri.jpg">
+<div class="player-info">
+<h3>GAYATHRI</h3>
+Surprise bowler & morale booster
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="matches" class="section">
+<h2>Match Schedule</h2>
+
+<div class="match">
+14 March — 8:00 AM<br>
+BARBARIANS vs LOKAH
+</div>
+
+<div class="match">
+14 March — 10:15 AM<br>
+LOKAH vs RUN RAIDERS
+</div>
+
+<div class="match">
+14 March — 3:45 PM<br>
+LOKAH vs SIRAGADIPOM NAANGA
+</div>
+
+</section>
+
+<section class="section">
+<h2>Final Message</h2>
+<p style="font-size:24px;text-align:center">
+If we surpass our desires,<br>
+meet you on the grounds by <b>15th March 😛</b>
+</p>
+</section>
+
+<footer id="contact">
+LOKAH<br>
+Ocean West Outer 1st Floor<br>
+Zoho Corporation Pvt Ltd<br>
+Chennai – 603202<br><br>
+Ph: 9344564709 / 7598338477
+</footer>
+
+</body>
+</html>
